@@ -442,12 +442,13 @@ export default function Home() {
             <h2 className="font-bold mb-4">Caméra en cours</h2>
             <div className="relative w-full h-48 bg-black rounded-md overflow-hidden">
               <video
-                src="/demo.mp4"
+                src="https://res.cloudinary.com/dgy0yjtjz/video/upload/v1744362671/demo_ba0svn.mp4"
                 className="w-full h-full object-cover"
                 autoPlay
                 loop
                 muted
                 controls
+                preload="metadata"
               />
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <div className="w-12 h-12 bg-gray-800 bg-opacity-50 rounded-full flex items-center justify-center">
@@ -466,11 +467,12 @@ export default function Home() {
                   className="relative h-24 bg-gray-200 rounded-md overflow-hidden"
                 >
                   <video
-                    src="/demo2.mp4"
+                    src="https://res.cloudinary.com/dgy0yjtjz/video/upload/v1744362653/demo1_f63bhx.mp4"
                     className="w-full h-full object-cover"
                     muted
                     autoPlay
                     loop
+                    preload="metadata"
                     // controls
                   />
                 </div>
@@ -481,11 +483,12 @@ export default function Home() {
                   className="relative h-24 bg-gray-200 rounded-md overflow-hidden"
                 >
                   <video
-                    src="/demo1.mp4"
+                    src="https://res.cloudinary.com/dgy0yjtjz/video/upload/v1744362684/demo2_i1kkjo.mp4"
                     className="w-full h-full object-cover"
                     muted
                     autoPlay
                     loop
+                    preload="metadata"
                     // controls
                   />
                 </div>
