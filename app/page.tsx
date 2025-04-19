@@ -30,7 +30,7 @@ import {
   LineChart,
   Line,
 } from "recharts";
-
+import WebcamViewer from "@/components/WebcamViewer";
 // Type pour les notifications
 interface Notification {
   id: string;
@@ -440,7 +440,7 @@ export default function Home() {
         <div className="w-full md:w-2/5 space-y-4">
           <div className="bg-white p-4 rounded-md border border-gray-200">
             <h2 className="font-bold mb-4">Caméra en cours</h2>
-            <div className="relative w-full h-48 bg-black rounded-md overflow-hidden">
+            {/* <div className="relative w-full h-48 bg-black rounded-md overflow-hidden">
               <video
                 src="https://res.cloudinary.com/dgy0yjtjz/video/upload/v1744362671/demo_ba0svn.mp4"
                 className="w-full h-full object-cover"
@@ -455,7 +455,8 @@ export default function Home() {
                   <div className="w-5 h-5 bg-gray-800 rounded-full"></div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <WebcamViewer />
           </div>
 
           <div className="bg-white p-4 rounded-md border border-gray-200">
